@@ -1,27 +1,24 @@
 # Tire Pressure Predictor
 
-A professional tool for GT and Formula racing that predicts optimal cold tire pressures to achieve target hot pressures during a stint.
+A professional tool for racing passionates that predicts optimal cold tire pressures to achieve target hot pressures during a stint.
 
 ## Overview
 
-Tire Pressure Predictor uses a machine learning model trained on real championship telemetry data to predict the cold tire pressures needed to reach your target hot pressures after a specified number of laps.
+Tire Pressure Predictor uses a ML model trained on real telemetry data to predict the cold tire pressures needed to reach your target hot pressures after a specified number of laps in a specific track.
 
-Instead of relying on trial-and-error or simplified linear formulas, this tool provides data-driven predictions based on actual racing conditions.
+Instead of relying on trial-and-error or simplified linear formulas, this tool provides data-driven predictions based on previous data.
 
 ## Features
 
-- **ML-based predictions** - Trained on real GT and Formula telemetry data for accurate results
-- **Track-specific analysis** - Accounts for track characteristics and tire behavior
+- **ML-based predictions** - Trained on real telemetry data for accurate results
+- **Multi-software** - Import data from all telemetry softwares: Motec/WinDarab/WinTAX etc
+- **Track-specific analysis** - Accounts for track characteristics
 - **Pressure trend visualization** - Charts showing pressure evolution over laps
 - **Auto track detection** - Uses GPS to automatically select the nearest circuit
-- **Race Simulation mode** - Plan your full race tire strategy across multiple stints, accounting for fuel load changes and tire degradation
-- **NO TPMS mode** - For vehicles without Tire Pressure Monitoring System, get predictions without real-time sensor feedback
-- **Custom track support** - Add tracks not in the database with scaling coefficients
+- **Race Simulation mode** - Suggests the bleed to adopt after formation laps based on hystoric runs
+- **NO TPMS mode** - For vehicles without Tire Pressure Monitoring System, get predictions with input-output simplified model
+- **Custom track support** - Add tracks not in the database with scaling coefficients based on tracks similarity
 - **Thermal correction tables** - Fine-tune predictions based on ambient conditions
-
-## Screenshots
-
-*(Coming soon)*
 
 ## System Requirements
 
