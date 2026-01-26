@@ -20,6 +20,28 @@ Instead of relying on trial-and-error or simplified linear formulas, this tool p
 - **Custom track support** - Add tracks not in the database with scaling coefficients based on tracks similarity
 - **Thermal correction tables** - Fine-tune predictions based on ambient conditions
 
+## Screenshots
+
+### Main Prediction Screen
+Set your target hot pressures, select the track and number of laps, and get recommended cold pressures with pressure trend charts.
+
+![Main Screen](screenshots/app-main.png)
+
+### Race Simulation - Grid Bleed Calculator
+Plan your race strategy with thermal gain coefficients and bleed recommendations for the formation lap.
+
+![Race Sim](screenshots/app-bleed.png)
+
+### Data Processing
+Import your telemetry data with automatic channel detection and mapping.
+
+![Data Processing](screenshots/app-processing.png)
+
+### Channel Mapping
+Custom mapping for different telemetry formats and data sources.
+
+![Channel Mapping](screenshots/app-setup.png)
+
 ## System Requirements
 
 - **OS:** Windows 10/11 (64-bit)
