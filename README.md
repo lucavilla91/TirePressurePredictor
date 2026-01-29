@@ -71,9 +71,35 @@ For license requests, support, or feedback:
 
 ## Changelog
 
+### v2.1.4 (Latest)
+- **Plateau Calculation Robustness**: No longer requires all 4 wheels to have data on the same lap/run
+- **Cross-Axle Mismatch Warning**: Detects when predicted pressures on same axle differ by >0.2 bar
+- **Pressure Trend Charts**: Fixed lap count display when out-lap is merged with lap 1
+- **Clear Data Reset**: Software Type now resets properly when clearing processed data
+
+### v2.1.3
+- **Open Processed Data**: "Open" button to quickly access processed CSV files in file explorer
+
+### v2.1.2
+- **Misplaced Beacon Fix**: Auto-merges short initial laps caused by misplaced beacons
+
+### v2.1.1
+- **Race Sim Dual Mode**: Forward (pressures → bleed) or Reverse (target bleed → pressures)
+- **Export Debug Logs**: Added missing file patterns for complete diagnostics
+
 ### v2.1.0
-- Latest stable release
-- See in-app version history for details
+- **Percentile Normalization (v6.5)**: Fixed artificial variability in MIN/MAX predictions
+- **Track Parameter Scaling**: Intelligent pressure scaling for custom tracks
+- **Track Relations Matrix**: Cross-track coefficient matrices for pressure prediction
+- **Manual Reference Track Selection**: Choose which track to use as reference
+
+### v2.0.x
+- Named Settings System with import/export
+- Auto-detection of telemetry software
+- Multi-software support (WinTax4, WinDarab, MoTeC)
+- Channel mapping enhancements
+
+See in-app Version History for complete details
 
 ## Disclaimer
 
