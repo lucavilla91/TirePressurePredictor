@@ -71,7 +71,25 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.1.4 (Latest)
+### v2.2.0 (Latest)
+- **Prediction History Tab**: Track and manage saved predictions over time with Excel-like grid layout
+- **Save Predictions**: Store prediction setups with driver, event type (Race/Test), session name, tire condition
+- **Export for Tyre Manager**: Generate clean text files with prediction data for easy communication
+- **Verification Workflow**: Add actual hot pressures after sessions to compare with predictions
+- **History Filtering**: Filter by track, driver, event type, session, and date range
+- **Bulk Delete**: Delete all visible (filtered) predictions at once
+- **History Preservation**: Prediction history preserved when deleting vehicle/tire pairs
+
+### v2.1.6
+- **Single Instance Lock**: Prevents multiple app instances from running simultaneously
+- **Windows Defender Prompt**: Installer prompts for Windows Defender exclusions
+
+### v2.1.5
+- **Concatenated Runs Detection**: Auto-detects and rejects files with multiple runs concatenated
+- **Multi-Format Archive Support**: Upload .zip, .rar, .7z, .tar, .gz archives
+- **Track Layout Channel Mapping**: GPS track layout generator supports custom channel mapping
+
+### v2.1.4
 - **Plateau Calculation Robustness**: No longer requires all 4 wheels to have data on the same lap/run
 - **Cross-Axle Mismatch Warning**: Detects when predicted pressures on same axle differ by >0.2 bar
 - **Pressure Trend Charts**: Fixed lap count display when out-lap is merged with lap 1
