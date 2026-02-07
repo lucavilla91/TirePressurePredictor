@@ -71,7 +71,80 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.2.0 (Latest)
+### v2.6.0 (Latest)
+- **Plateau Valid Flag**: New `plateau_valid` column with selective propagation — aborted laps don't invalidate subsequent plateau data, recovering valid data from long runs
+- **Auto-Save Plateau Runs**: Runs reaching pressure plateau (97% buildup) automatically saved to Prediction History as `plateau_auto` entries
+- **Plateau Reached Runs Section**: New section in History tab for auto-detected plateau entries with emerald color scheme
+- **.tpp File Association**: Double-click `.tpp` config files to open them directly in the app
+- **Drag & Drop ZIP**: Drop archive files directly onto the Data tab upload area
+- **Collapsible History Sections**: Saved Predictions and Plateau Reached Runs sections can be collapsed/expanded
+
+### v2.5.4
+- **Zoom Support**: Ctrl+scroll, Ctrl+Plus/Minus, and Ctrl+0 (reset) for zooming across the app
+- **Generic "Other" Filter**: Renamed Compound column to "Other" for custom tagging (new/used, soft/medium/hard, etc.)
+- **Frontend Log Rotation**: Fixed unbounded log growth (now 5MB × 2 backups)
+- **Chromium Cache Limit**: Disk cache limited to 50MB (was 300MB+)
+
+### v2.5.3
+- **Windows Defender False Positive**: Installer adds Defender exclusions before extracting files, preventing sidecar.exe quarantine
+- **Per-Machine Install**: Admin elevation for Defender exclusion commands
+
+### v2.5.2
+- **Min Valid Laps Setting**: Configurable minimum valid laps (default: 3) for quality data filtering
+- **OptimumG Pressure Calculator**: Replaced incorrect Custom K formula with verified OptimumG ideal gas law algorithm
+- **K Factors Loading**: Fixed crash when loading old saved data missing newer fields
+
+### v2.5.1
+- **Race Tires Management - Enhanced Ratio Mode**: Single reference run selection, auto-read pressures/temperatures, temperature corrections with configurable coefficients
+- **Runsheet Editor Enhancements**: Auto-save, undo/redo, copy/paste, tab navigation, optional columns (Event, Session, Driver)
+- **Excel Plateau Fix**: Corrected plateau lap estimation formula
+- **Concatenated Runs Fix**: Fixed false detection with Ferrari logger lap counter reset
+
+### v2.5.0
+- **Runsheet Editor**: Interactive Excel pressure data editor with inline editing, validation, row operations, import modes, and Excel export
+- **Compound Field**: New dropdown in Race Tires Management with custom list management
+- **RAR5 Support**: WinRAR UnRAR.exe for better RAR5 compatibility
+- **New Archive Formats**: `.rar4`, `.rar5`, `.zipx`, `.cab` support
+
+### v2.4.4
+- **Data Tab Feedback**: Warning when data loaded but no vehicle/tire pair selected
+- **Electron Input Focus**: Fixed inputs not editable after file import
+
+### v2.4.3
+- **Rename Vehicle/Tire Pair**: Rename pairs without losing data (renames all associated files)
+- **License Machine Binding**: One license per computer with deactivation for transfer
+- **Portable Mode**: Run from USB drive with `portable.txt` flag
+
+### v2.4.2
+- **Multi-file TPC Import**: Select and import multiple `.tpc` files at once
+- **Target Temperature Inputs**: Air (cold), Air (track), and Track temperature fields in Requirements
+
+### v2.4.1
+- **Export/Import Configuration**: Export vehicle/tire pair configs as `.tpp` files for migration/sharing
+- **Search Bar in Data Tab**: Filter vehicle/tire pairs by car model or tire compound
+- **Auto RunRegistry Generation**: Export auto-generates run registry from processed CSV
+
+### v2.4.0
+- **Race Tires Management - Advanced Graph**: ΔP vs ΔT and ΔP vs Laps charts with wheel toggles, mean/trend lines, driver/laps filters
+- **Race Tires Management - Auto K Factors**: Per-wheel K factor calculation via linear regression with R² quality indicators
+- **Race Tires Management - UX**: Air column, Track dropdown, Tire Set numeric input, Lists persistence, collapsible panel
+
+### v2.3.1
+- **Tire Change Data Shift**: Mid-session tire changes detected and handled — old tire data discarded, laps renumbered from new tires
+
+### v2.3.0
+- **Bleed Calculation Physics Model**: Real gas thermal expansion model replacing linear formula
+- **Three Calculation Modes**: Constant Bleed, Custom Start P, Custom k
+- **ΔT Statistics**: Per-wheel Min/Avg/Max temperature increase display
+
+### v2.2.1
+- **Bleed Calculation in Prediction Tab**: Integrated bleed correction with configurable N laps and overpressure
+- **Tire Change Detection**: Distinguishes pressure bleeds from tire changes via temperature monitoring
+- **New Settings**: Temperature drop threshold, valid samples threshold
+- **Concatenated Runs Feedback**: Processing summary shows concatenated file count
+- **Simplified Workflow**: Removed Race Sim tab — bleed calculation integrated into Prediction tab
+
+### v2.2.0
 - **Prediction History Tab**: Track and manage saved predictions over time with Excel-like grid layout
 - **Save Predictions**: Store prediction setups with driver, event type (Race/Test), session name, tire condition
 - **Export for Tyre Manager**: Generate clean text files with prediction data for easy communication
