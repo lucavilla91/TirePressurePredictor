@@ -71,7 +71,30 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.6.0 (Latest)
+### v2.6.4 (Latest)
+- **Help Tab — Comprehensive Rewrite**: Complete rewrite with collapsible Quick Start Guide (Data, Main, History), Features & Details (Processing, Prediction, History, Configuration, Files/Shortcuts), and updated Telemetry Software Export Templates
+- **Help — Icon Button**: Help moved from tab bar to a toggle (?) button next to dark mode. Click toggles on/off, returning to previous tab
+- **Track Layout — Corner Numbering**: Numbered corner markers positioned outside the track line with leader lines, like technical drawings
+- **Track Layout — Redesign**: Dark red track line (theme-aware), checkered start/finish flag
+- **Training Data — Track Temperature Note**: Explains why T.Track is not a separate input and how ambient temperature range relates to track surface conditions
+- **Help — Short vs Long Run Guidance**: Data tab for short runs (ML model training) vs Race Tires Management for long run stabilized pressure analysis
+
+### v2.6.3
+- **Manual Inputs (renamed)**: "Excel Upload" tab renamed to "Manual Inputs" across the entire UI
+- **Runsheet Editor — Simplified T_cold**: Single "T amb" column replaces 4 per-wheel cold temperature columns
+- **Runsheet Editor — Always-editable cells**: Native dropdowns always visible, numeric cells always editable
+
+### v2.6.2
+- **Training Data Conditions Indicator**: Visual range bar in Main tab showing ambient temperature range of training data (green/amber/red status)
+- **Auto-Calculate Predictions**: Cold pressures update automatically when changing target hot pressures or laps (500ms debounce)
+- **Runsheet Editor — List Manager**: Manage Track, Event, Session, Driver lists per pair
+- **Runsheet Editor — T_track Column**: New optional track surface temperature column
+- **Number Input Fix**: Fixed keyboard entry issues with decimal separators on Windows/Electron
+
+### v2.6.1
+- **WinTax4 CSV separator fallback**: Auto-detects comma-separated CSV when semicolon fails (English/Australian regional settings)
+
+### v2.6.0
 - **Plateau Valid Flag**: New `plateau_valid` column with selective propagation — aborted laps don't invalidate subsequent plateau data, recovering valid data from long runs
 - **Auto-Save Plateau Runs**: Runs reaching pressure plateau (97% buildup) automatically saved to Prediction History as `plateau_auto` entries
 - **Plateau Reached Runs Section**: New section in History tab for auto-detected plateau entries with emerald color scheme
