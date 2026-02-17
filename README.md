@@ -71,7 +71,15 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.6.4 (Latest)
+### v2.6.5 (Latest)
+- **Pressure Unit Toggle (bar/PSI)**: Global toggle switch in the header to display all pressures in bar (default) or PSI. Conversion is display-only — all storage, calculations, and exports remain in bar
+- **Full App Coverage**: Unit toggle applies across Main tab (target/recommended pressures), History cards, Race Tires Management, Runsheet Editor, Data tab settings, and charts
+- **Smart Input Conversion**: Pressure inputs automatically adapt step size, decimal precision, and min/max bounds when switching units
+- **Race Tires Management — Event Lists**: Event type is now a managed list (like Tracks, Sessions, Drivers) instead of hardcoded Race/Test. Add custom event types via Lists manager and filter by them
+- **Race Tires Management — Add Run Fix**: "Add Run" now correctly copies calculated cold/hot pressures to the new row instead of adding empty values
+- **Footer Website Links**: Links to tirepressurepredictor.com and motorsportsoftware.com centered in footer
+
+### v2.6.4
 - **Help Tab — Comprehensive Rewrite**: Complete rewrite with collapsible Quick Start Guide (Data, Main, History), Features & Details (Processing, Prediction, History, Configuration, Files/Shortcuts), and updated Telemetry Software Export Templates
 - **Help — Icon Button**: Help moved from tab bar to a toggle (?) button next to dark mode. Click toggles on/off, returning to previous tab
 - **Track Layout — Corner Numbering**: Numbered corner markers positioned outside the track line with leader lines, like technical drawings
