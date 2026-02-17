@@ -22,25 +22,35 @@ Instead of relying on trial-and-error or simplified linear formulas, this tool p
 
 ## Screenshots
 
-### Main Prediction Screen
+### Main Prediction Screen (Dark Mode)
 Set your target hot pressures, select the track and number of laps, and get recommended cold pressures with pressure trend charts.
 
 ![Main Screen](screenshots/app-main.png)
 
-### Race Simulation - Grid Bleed Calculator
-Plan your race strategy with thermal gain coefficients and bleed recommendations for the formation lap.
+### Main Prediction Screen (Light Mode, PSI)
+Switch to PSI display with the global pressure unit toggle. All values convert automatically.
 
-![Race Sim](screenshots/app-bleed.png)
+![Main Screen PSI](screenshots/app-main-psi.png)
 
-### Data Processing
-Import your telemetry data with automatic channel detection and mapping.
+### Bleed Correction
+Bleed correction with thermal gain coefficients — choose between Constant Bleed, Custom Start P, or Custom k modes.
+
+![Bleed Correction](screenshots/app-bleed.png)
+
+### Prediction History & Race Tires Management
+Track saved predictions, manage race tire setups, and view auto-detected plateau runs.
+
+![History](screenshots/app-history.png)
+
+### Data Processing & Channel Mapping
+Import telemetry data with automatic software detection, channel mapping, and named settings.
 
 ![Data Processing](screenshots/app-processing.png)
 
-### Channel Mapping
-Custom mapping for different telemetry formats and data sources.
+### Vehicle & Tire Selection
+Manage vehicle/tire pairs, upload telemetry archives, and track processing status.
 
-![Channel Mapping](screenshots/app-setup.png)
+![Data Tab](screenshots/app-setup.png)
 
 ## System Requirements
 
