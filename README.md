@@ -22,6 +22,16 @@ Instead of relying on trial-and-error or simplified linear formulas, this tool p
 
 ## Screenshots
 
+### Vehicle & Tire Selection
+Manage vehicle/tire pairs, upload telemetry archives, and track processing status.
+
+![Data Tab](screenshots/app-setup.png)
+
+### Data Processing & Channel Mapping
+Import telemetry data with automatic software detection, channel mapping, and named settings.
+
+![Data Processing](screenshots/app-processing.png)
+
 ### Main Prediction Screen (Dark Mode)
 Set your target hot pressures, select the track and number of laps, and get recommended cold pressures with pressure trend charts.
 
@@ -38,19 +48,9 @@ Bleed correction with thermal gain coefficients — choose between Constant Blee
 ![Bleed Correction](screenshots/app-bleed.png)
 
 ### Prediction History & Race Tires Management
-Track saved predictions, manage race tire setups, and view auto-detected plateau runs.
+Track saved predictions, manage race tire setups, and view auto-detected plateau runs. Designed for use with tyre heaters and stabilized pressure runs.
 
 ![History](screenshots/app-history.png)
-
-### Data Processing & Channel Mapping
-Import telemetry data with automatic software detection, channel mapping, and named settings.
-
-![Data Processing](screenshots/app-processing.png)
-
-### Vehicle & Tire Selection
-Manage vehicle/tire pairs, upload telemetry archives, and track processing status.
-
-![Data Tab](screenshots/app-setup.png)
 
 ## System Requirements
 
