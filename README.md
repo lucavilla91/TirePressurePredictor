@@ -81,7 +81,14 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.6.5 (Latest)
+### v2.7.0 (Latest)
+- **Linked Folder**: Select a folder of telemetry CSV files directly — no need to ZIP them first. The folder is linked to the vehicle/tire pair and remembered across sessions
+- **Auto re-scan on processing**: Linked folders are automatically re-scanned when clicking Run Processing, picking up new files added since last scan
+- **New file detection (60s polling)**: Periodic check detects new CSV/TXT files in the linked folder and shows an amber banner notification in the Data tab
+- **Auto-scan on pair selection**: When a linked folder exists, it is automatically scanned when the vehicle/tire pair is selected
+- **Data Structure Info**: Updated info card documenting both Linked Folder and Archive workflows with structure examples
+
+### v2.6.5
 - **Pressure Unit Toggle (bar/PSI)**: Global toggle switch in the header to display all pressures in bar (default) or PSI. Conversion is display-only — all storage, calculations, and exports remain in bar
 - **Full App Coverage**: Unit toggle applies across Main tab (target/recommended pressures), History cards, Race Tires Management, Runsheet Editor, Data tab settings, and charts
 - **Smart Input Conversion**: Pressure inputs automatically adapt step size, decimal precision, and min/max bounds when switching units
