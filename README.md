@@ -81,7 +81,15 @@ For license requests, support, or feedback:
 
 ## Changelog
 
-### v2.7.0 (Latest)
+### v2.7.2 (Latest)
+- **Per-run processing details**: After processing, a "▼ Run details" toggle shows the result of each run — added/discarded status, aborted lap number, plateau start lap, and prewarmed ΔT
+- **Smart re-processing of excluded files**: Discarded runs (wet, prewarmed, insufficient laps, etc.) are skipped on repeat processing unless relevant settings change — less noise in the summary
+- **Manual update control**: Update notification banner lets you choose when to download — no automatic background downloads
+
+### v2.7.1
+- **Clear Data bug**: Clicking "Clear" on Qualy/Race Runs no longer resets Channel Mapping, Settings, and Run Processing UI state
+
+### v2.7.0
 - **Linked Folder**: Select a folder of telemetry CSV files directly — no need to ZIP them first. The folder is linked to the vehicle/tire pair and remembered across sessions
 - **Auto re-scan on processing**: Linked folders are automatically re-scanned when clicking Run Processing, picking up new files added since last scan
 - **New file detection (60s polling)**: Periodic check detects new CSV/TXT files in the linked folder and shows an amber banner notification in the Data tab
